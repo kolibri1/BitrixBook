@@ -1,5 +1,5 @@
 Содержание
 ==========
 
-* [Подключение скриптов](https://github.com/kolibri1/Bitrix-Snippets/blob/master/howto/main/scripts.md) 
+* [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/scripts.md) 
 
