@@ -14,7 +14,7 @@ $Asset->addCss(SITE_TEMPLATE_PATH.'/styles/style.css');
 //и файл скрипта
 $Asset->addJs(SITE_TEMPLATE_PATH.'/js/script.js');
 ```
-Начиная с версии 15.5 для шаблона компонента доступно подключение подключение внешних скриптов и стилей(помимо стандартных(script.js и style.css):
+Начиная с версии 15.5 для шаблона компонента доступно подключение внешних скриптов и стилей(помимо стандартных script.js и style.css):
 ```php
 $this->addExternalCss("/local/styles.css");
 $this->addExternalJS("/local/component.js");
