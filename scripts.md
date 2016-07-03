@@ -20,5 +20,8 @@ $Asset->addJs(SITE_TEMPLATE_PATH.'/js/script.js');
 ```php
 use Bitrix\Main\Loader; 
 //Подключаем модуль инфоблоков
-Loader::includeModule("iblock"); 
+Loader::includeModule("iblock");
+
+//Очистить кеш модуля
+Loader::clearModuleCache("iblock")
 ```
