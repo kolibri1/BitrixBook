@@ -1,7 +1,7 @@
-Содержание
-==========
-
-
+Книга рецептов Bitrix 
+=====================
+v0.1a
+##Содержание
 ###Ядро [main]
 
 * [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/scripts.md) 
