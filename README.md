@@ -9,3 +9,8 @@
 * [Пользователи](https://github.com/kolibri1/BitrixBook/blob/master/users.md) 
 
 
+При подготовке использовалась информация из источников:
+сайт intervolga.ru
+сайт mrcappuccino.ru
+документация и обучающие материалы 1с-Битрикс
+материалы сообщества 1с-Битрикс http://dev.1c-bitrix.ru/community/forums/ и http://dev.1c-bitrix.ru/community/blogs/
