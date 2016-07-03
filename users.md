@@ -18,3 +18,4 @@ while ($user = $users->fetch()) {
 	print $user["EMAIL"]."<br>";
 }
 ```
+К сожалению, пока это все. Если нужны методы add, update и delete пользуйтесь методами старого класса CUser.  
