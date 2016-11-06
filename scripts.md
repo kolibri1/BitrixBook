@@ -31,3 +31,4 @@ Loader::includeModule("iblock");
 //Очистить кеш модуля
 Loader::clearModuleCache("iblock")
 ```
+.
