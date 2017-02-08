@@ -11,8 +11,12 @@ function copyElement($id,$name = "") {
 	   
 		$arFieldsCopy["IBLOCK_ID"] = $arFields["IBLOCK_ID"];
 		$arFieldsCopy["IBLOCK_SECTION_ID"] = $arFields["IBLOCK_SECTION_ID"];
+		$arFieldsCopy["PREVIEW_TEXT_TYPE"] = "html";
 		$arFieldsCopy["PREVIEW_TEXT"] = $arFields["PREVIEW_TEXT"];
+		$arFieldsCopy["DETAIL_TEXT_TYPE"] = "html";
 		$arFieldsCopy["DETAIL_TEXT"] = $arFields["DETAIL_TEXT"];
+
+		unset($arFieldsCopy["MIN_PRICE"]);
 
 		$arFieldsCopy["NAME"] = ($name)?$name:$arFields["NAME"];
 
@@ -52,14 +56,14 @@ function copyElement($id,$name = "") {
 			}
 	   }
 	   
-	   $el = new CIBlockElement();
-	   if($NEW_ID = $el->Add($arFieldsCopy)){
+	   $ele = new CIBlockElement();
+	   if($NEW_ID = $ele->Add($arFieldsCopy)){
 	   		echo 'Элемент скопирован. ID нового элемента: '.$NEW_ID;
 	   		return $NEW_ID;
 	   } else {
 			echo 'Ошибка копирования элемента с ID: '.$arFields["ID"];
 			print "<pre>";
-			print_r($el->LAST_ERROR);
+			print_r($ele->LAST_ERROR);
 			print "</pre>";
 			return false;
 	   }
