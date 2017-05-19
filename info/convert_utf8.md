@@ -1,5 +1,43 @@
 Конвертация сайта из windows-1251 в кодировку utf-8
 ==============================
+ВНИМАНИЕ: Если у вас демонстрационная версия битрикса, этот способ не подойдет!
+
+На сервере должны быть следующие настройки для PHP:
+```php
+mbstring.func_overload 2
+mbstring.internal_encoding UTF-8
+```
+
+Сначала конвертируем все файлы, включая ядро(php, html, js и т.п.) в кодировку UTF8. Обязательно без сохранения BOM!
+Можно воспользоваться скриптом [convert_utf8.php](http://www.1c-bitrix.ru/download/files/scripts/convert_utf8.php).
+
+В файле /bitrix/php_interface/dbconn.php добавить:
+```php
+define("BX_UTF", true);
+```
+
+В файле /bitrix/php_interface/after_connect.php должно быть:
+```php
+$DB->Query("SET NAMES 'utf8'");
+$DB->Query("SET collation_connection = 'utf8_unicode_ci'");
+```
+
+В файле настроек /bitrix/.settings.php:
+```php
+'utf_mode' => 
+  array (
+    'value' => true,
+    'readonly' => true,
+  ),
+```
+
+В файле /bitrix/php_interface/after_connect_d7.php должно быть:
+```php
+$connection = \Bitrix\Main\Application::getConnection();
+$connection->queryExecute("SET NAMES 'utf8'");
+$connection->queryExecute('SET collation_connection = "utf8_unicode_ci"');
+``
+
 
 Для конвертации базы, выполнить запрос:
 ```sql
@@ -9,11 +47,11 @@ WHERE 1
 AND t.`TABLE_SCHEMA` =  'ИМЯ_КОНВЕРТИРУЕМОЙ_БАЗЫ'
 ORDER BY 1
 ```
-который сгенерирует список запросов для конвертации каждой таблицы, их необходимо выволнить
+который сгенерирует список запросов для конвертации каждой таблицы, их необходимо выполнить
 
 После конвертации базы данных, возможна проблема со свойствами типа html/text, из-за того, что в полях хранится сериализованный массив, и после конвертации длина значений не совпадает.
 
-можно выполнить подобный скрипт:
+Для исправления можно выполнить подобный скрипт:
 ```php
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
@@ -43,3 +81,5 @@ function c(&$item, &$key)
 }
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
 ```
+
+В админке битрикса, для сайтов установить кодировку utf-8

@@ -7,7 +7,7 @@ v0.1a
 * [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/scripts.md) 
 * [Кеширование](https://github.com/kolibri1/BitrixBook/blob/master/cache.md)
 * [Пользователи](https://github.com/kolibri1/BitrixBook/blob/master/users.md) 
-
+* [Конвертация сайта в кодировку UTF-8](https://github.com/kolibri1/BitrixBook/blob/master/info/convert_utf8.md)
 
 При подготовке использовалась информация из источников:  
 сайт intervolga.ru  
