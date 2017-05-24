@@ -4,9 +4,9 @@ v0.1a
 ##Содержание
 ###Ядро [main]
 
-* [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/scripts.md) 
-* [Кеширование](https://github.com/kolibri1/BitrixBook/blob/master/cache.md)
-* [Пользователи](https://github.com/kolibri1/BitrixBook/blob/master/users.md) 
+* [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/api/main/scripts.md) 
+* [Кеширование](https://github.com/kolibri1/BitrixBook/blob/master/api/main/cache.md)
+* [Пользователи](https://github.com/kolibri1/BitrixBook/blob/master/api/main/users.md) 
 * [Конвертация сайта в кодировку UTF-8](https://github.com/kolibri1/BitrixBook/blob/master/info/convert_utf8.md)
 
 При подготовке использовалась информация из источников:  
