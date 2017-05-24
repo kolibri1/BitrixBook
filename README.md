@@ -1,8 +1,8 @@
 Про Bitrix 
 =====================
 v0.1a
-##Содержание
-###Ядро [main]
+## Содержание
+### Ядро [main]
 
 * [Подключение скриптов](https://github.com/kolibri1/BitrixBook/blob/master/api/main/scripts.md) 
 * [Кеширование](https://github.com/kolibri1/BitrixBook/blob/master/api/main/cache.md)
