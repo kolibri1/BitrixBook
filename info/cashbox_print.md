@@ -3,7 +3,7 @@
 
 В классе платежной системы Payment (\bitrix\modules\sale\lib\payment.php) в методе save() есть проверка на наличие ключа PAID среди измененных атрибутов.
 Если PAID присутствует и в настройках платежной системы выставлен чекбокс "печатать чек":
-```php
+```php 
 $changedKeys = $this->fields->getChangedKeys();
 if (in_array("PAID", $changedKeys))
 {
