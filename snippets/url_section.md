@@ -1,6 +1,6 @@
-Код раздела из URL
+пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ URL
 ==============================
-
+  d
 ```php
 $smartBase = "#SECTION_CODE_PATH#/";
 $arDefaultUrlTemplates404 = array(
