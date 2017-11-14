@@ -1,6 +1,6 @@
 ��� ������� �� URL
 ==============================
-  d
+
 ```php
 $smartBase = "#SECTION_CODE_PATH#/";
 $arDefaultUrlTemplates404 = array(
@@ -10,7 +10,7 @@ $arDefaultUrlTemplates404 = array(
 );
 
 
-$arDefaultVariableAliases404 = array();
+$arDefaultVariableAliases404 = array();  
 
 $arDefaultVariableAliases = array();
 

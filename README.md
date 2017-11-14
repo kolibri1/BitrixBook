@@ -9,6 +9,7 @@ v0.1a
 * [Пользователи](https://github.com/kolibri1/BitrixBook/blob/master/api/main/users.md) 
 * [Конвертация сайта в кодировку UTF-8](https://github.com/kolibri1/BitrixBook/blob/master/info/convert_utf8.md)
 * [Небольшая заметка по чекам в битрикс](https://github.com/kolibri1/BitrixBook/blob/master/info/cashbox_print.md)
+* [Автоматическая рассылка выпуска пользователям](https://github.com/kolibri1/BitrixBook/blob/master/api/main/subscribe_send_agent.md)
 
 При подготовке использовалась информация из источников:  
 сайт intervolga.ru  
